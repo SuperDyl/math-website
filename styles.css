@@ -16,10 +16,27 @@
   color: var(--near-white);
 }
 
+a {
+  color: #a0c0e1;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #a0c0e1;
+}
+
+a:active {
+  color: var(--near-white);
+}
+
 body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+}
+
+.navbar-brand img {
+  height: 3.5em;
 }
 
 .content-space {
