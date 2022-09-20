@@ -1,12 +1,19 @@
 :root {
+  --darkest-blue: #242636;
   --very-dark-blue: #1b1a4f;
   --dark-blue: #3d426c;
+  --near-white: #ececec;
+}
+
+.bg-dark {
+  background-color: var(--darkest-blue)!important;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: var(--near-white);
 }
 
 body {
@@ -26,6 +33,7 @@ body {
 .reading-pane {
   width: 960px;
   background-color: var(--dark-blue);
+  padding: 1em 2em;
 }
 
 
