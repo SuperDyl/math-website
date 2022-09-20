@@ -1,25 +1,46 @@
+:root {
+  --very-dark-blue: #1b1a4f;
+  --dark-blue: #3d426c;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-space {
+  flex-grow: 1;
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.reading-pane {
+  width: 960px;
+  background-color: var(--dark-blue);
+}
 
 
 
 
-
-
+/* Phone Styles */
 @media only screen and (max-width: 400px) {
-    
+  .reading-pane {
+    width: 100%;
+  }
 }
 
 /* Tablet Styles */
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-    
-}
-
-/* Desktop Styles */
-@media only screen and (min-width: 961px) {
-    
+  .reading-pane {
+    width: 100%;
+  }
 }
