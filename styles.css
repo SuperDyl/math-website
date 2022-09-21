@@ -115,6 +115,10 @@ body {
     justify-content: center;
 }
 
+.navbar-toggler {
+  margin-right: 1em;
+}
+
 /* Phone Styles */
 @media only screen and (max-width: 400px) {
   .reading-pane {
