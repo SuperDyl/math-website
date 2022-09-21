@@ -3,6 +3,7 @@
   --very-dark-blue: #1b1a4f;
   --dark-blue: #3d426c;
   --near-white: #ececec;
+  --dark-aqua: #127d86;
 }
 
 .bg-dark {
@@ -11,6 +12,7 @@
 
 .navbar {
   height: 96px;
+  padding: 0;
 }
 
 .navbar-collapse {
@@ -29,7 +31,26 @@
   height: 100%;
   display: flex;
   align-items: center;
+  padding: 1em!important;
 }
+
+.navbar-brand {
+  margin: 0;
+  padding: 0.25em 1em;
+}
+
+.navbar-brand.active {
+  display: flex;
+  align-items: center;
+  padding-left: 1em;
+  background-color: var(--dark-aqua)!important;
+  height: 100%;
+}
+
+.active {
+  background-color: var(--dark-aqua);
+}
+
 
 
 * {
