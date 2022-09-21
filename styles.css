@@ -105,7 +105,17 @@ body {
   margin: auto;
 }
 
+.row {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+.col-sm {
+    display: flex;
+    justify-content: center;
+}
 
 /* Phone Styles */
 @media only screen and (max-width: 400px) {
