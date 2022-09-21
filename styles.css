@@ -119,6 +119,18 @@ body {
   margin-right: 1em;
 }
 
+.footer {
+  background-color: var(--darkest-blue);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer p {
+  margin-bottom: 0;
+  padding: 1em;
+  padding-top: 2em;
+}
+
 /* Phone Styles */
 @media only screen and (max-width: 400px) {
   .reading-pane {
