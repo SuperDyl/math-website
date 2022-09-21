@@ -55,6 +55,7 @@ body {
 .reading-pane {
   width: 960px;
   background-color: var(--dark-blue);
+  height: 100%;
 }
 
 
