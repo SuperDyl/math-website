@@ -33,24 +33,28 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  flex-grow: 1;
+  background-color: var(--very-dark-blue);
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand img {
   height: 3.5em;
 }
 
-.content-space {
+.page-content {
   flex-grow: 1;
-  background-color: var(--very-dark-blue);
   width: 100%;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  padding: 1em 2em;
 }
 
 .reading-pane {
   width: 960px;
   background-color: var(--dark-blue);
-  padding: 1em 2em;
 }
 
 
