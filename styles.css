@@ -33,9 +33,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background-color: var(--very-dark-blue);
-  width: 100%;
   display: flex;
   align-items: center;
 }
@@ -55,7 +53,7 @@ body {
 .reading-pane {
   width: 960px;
   background-color: var(--dark-blue);
-  height: 100%;
+  flex-grow: 1;
 }
 
 
