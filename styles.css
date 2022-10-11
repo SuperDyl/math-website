@@ -80,6 +80,15 @@ body {
   align-items: center;
 }
 
+input {
+  background-color: var(--darkest-blue);
+}
+
+button {
+  background-color: var(--darkest-blue);
+  padding: 0.1em 1.5em;
+}
+
 .navbar-brand img {
   height: 3.5em;
 }
@@ -130,6 +139,32 @@ body {
   padding: 1em;
   padding-top: 2em;
 }
+
+.practice-box {
+  max-width: 16em;
+}
+
+.practice-box > * {
+  margin-left: .5em;
+  margin-right: .5em;
+  white-space: nowrap;
+}
+
+.practice-box div.practice-box-equation {
+  display: flex;
+  justify-content: center;
+}
+
+.practice-box div.practice-box-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.practice-box input {
+  margin-left: 0.5em;
+}
+
+
 
 /* Phone Styles */
 @media only screen and (max-width: 400px) {
