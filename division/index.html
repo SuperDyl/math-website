@@ -76,7 +76,7 @@
           <span>
             <span id="practice-expression"></span> =
           </span>
-          <input width="2px">
+          <input id="user-answer">
         </div>
         <div class="practice-box-buttons">
           <button id="another">
@@ -121,6 +121,13 @@
     document.getElementById('another').onclick = function () {
       document.getElementById("practice-expression").textContent = "";
       mathWiz("div");
+    };
+
+    document.getElementById("check-button").onclick = function () {
+      const userResponse = document.getElementById("user-answer");
+      const userValue = userResponse.value;
+      userResponse.value =
+        userValue + (userValue === answer + "" ? " Correct" : " Wrong");
     };
   </script>
 
