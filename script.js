@@ -2,9 +2,6 @@ let answer = 0;
 
 
 function mathWiz(opp) {
-    
-    console.log("Hi");
-    
     const url = "https://x-math.herokuapp.com/api/" + opp;
     const item = document.getElementById("practice-expression")
     
@@ -18,11 +15,15 @@ function mathWiz(opp) {
         let expression = document.createTextNode(e.expression);
         // item.removeChild();
         item.appendChild(expression);
-        console.log("success");
     });
     
 }
 
 window.onload = function() {
       mathWiz("random");
+};
+
+document.getElementById('another').onclick = function() {
+    document.getElementById("practice-expression").textContent = "";
+    mathWiz("random");
 };
