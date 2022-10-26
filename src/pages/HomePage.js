@@ -139,24 +139,48 @@ function HomePage({ children, ...other }) {
         <div class="container">
           <div class="row">
             <div class="col-sm">
-              <img class="gridPic" src="../images/mathMeme1.jpg" width="100%" />
+              <img
+                class="gridPic"
+                src={require("../images/mathMeme1.jpg")}
+                width="100%"
+              />
             </div>
             <div class="col-sm">
-              <img class="gridPic" src="../images/mathMeme2.jpg" width="100%" />
+              <img
+                class="gridPic"
+                src={require("../images/mathMeme2.jpg")}
+                width="100%"
+              />
             </div>
             <div class="col-sm">
-              <img class="gridPic" src="../images/mathMeme3.jpg" width="100%" />
+              <img
+                class="gridPic"
+                src={require("../images/mathMeme3.jpg")}
+                width="100%"
+              />
             </div>
           </div>
           <div class="row">
             <div class="col-sm">
-              <img class="gridPic" src="../images/mathMeme4.jpg" width="100%" />
+              <img
+                class="gridPic"
+                src={require("../images/mathMeme4.jpg")}
+                width="100%"
+              />
             </div>
             <div class="col-sm">
-              <img class="gridPic" src="images/mathMeme5.png" width="100%" />
+              <img
+                class="gridPic"
+                src={require("../images/mathMeme5.png")}
+                width="100%"
+              />
             </div>
             <div class="col-sm">
-              <img class="gridPic" src="images/mathMeme6.png" width="100%" />
+              <img
+                class="gridPic"
+                src={require("../images/mathMeme6.png")}
+                width="100%"
+              />
             </div>
           </div>
         </div>
