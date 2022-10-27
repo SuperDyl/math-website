@@ -9,13 +9,13 @@ import HomePage from "./pages/HomePage.js";
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/math-website/build">
       <Routes>
         <Route index element={<HomePage />} />
-        <Route path="Addition" element={<Addition />} />
-        <Route path="Subtraction" element={<Subtraction />} />
-        <Route path="Multiplication" element={<Multiplication />} />
-        <Route path="Division" element={<Division />} />
+        <Route path="/Addition" element={<Addition />} />
+        <Route path="/Subtraction" element={<Subtraction />} />
+        <Route path="/Multiplication" element={<Multiplication />} />
+        <Route path="/Division" element={<Division />} />
         <Route path="*" element={<NoPage />} />
       </Routes>
     </BrowserRouter>

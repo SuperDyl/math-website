@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles.css";
+import {Link} from "react-router-dom";
 
 // let answer = 0;
 
@@ -58,24 +59,24 @@ function HomePage({ children, ...other }) {
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link" href="./addition/">
+              <Link class="nav-link" to="/Addition">
                 Addition
-              </a>
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./subtraction/">
-                Subtraction
-              </a>
+              <Link class="nav-link" to="/Subtraction">
+                  Subtraction
+                </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./multiplication/">
-                Multiplication
-              </a>
+              <Link class="nav-link" to="/Multiplication">
+                  Multiplication
+              </Link>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="./division/">
+              <Link class="nav-link" to="/Division">
                 Division
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -95,7 +96,7 @@ function HomePage({ children, ...other }) {
         <h2>Topics</h2>
         <ul>
           <li>
-            <a href="./addition/index.html">Addition</a>: The addition of two
+            <Link to="/Addition">Addition</Link>: The addition of two
             whole numbers results in the total amount or sum of those values
             combined.
           </li>
