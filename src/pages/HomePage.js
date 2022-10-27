@@ -27,16 +27,16 @@ function HomePage({ children, ...other }) {
             numbers results in the total amount or sum of those values combined.
           </li>
           <li>
-            <a href="./subtraction/index.html">Subtraction</a>: an arithmetic
+            <Link to="/Subtraction">Subtraction</Link>: an arithmetic
             operation that represents the operation of removing objects from a
             collection.
           </li>
           <li>
-            <a href="./multiplication/index.html">Multiplication</a>: may be
+            <Link to="/Multiplication">Multiplication</Link>: may be
             thought of as repeated addition.
           </li>
           <li>
-            <a href="./division/index.html">Division</a>: At an elementary level
+            <Link to="/Division">Division</Link>: At an elementary level
             the division of two natural numbers is the process of calculating
             the number of times one number is contained within another.
           </li>
