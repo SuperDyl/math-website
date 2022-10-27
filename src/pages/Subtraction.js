@@ -4,13 +4,13 @@ import "./styles.css";
 
 function Subtraction({ children, ...other }) {
   return (
-    <div class="reading-pane">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand" href="../">
+    <div className="reading-pane">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a className="navbar-brand" href="../">
           <img src="../images/a-cute-angle.jpg" />
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -18,34 +18,34 @@ function Subtraction({ children, ...other }) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="../addition/">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="../addition/">
                 Addition
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link active" href="#">
+            <li className="nav-item">
+              <a className="nav-link active" href="#">
                 Subtraction
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../multiplication/">
+            <li className="nav-item">
+              <a className="nav-link" href="../multiplication/">
                 Multiplication
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../division/">
+            <li className="nav-item">
+              <a className="nav-link" href="../division/">
                 Division
               </a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="page-content">
+      <div className="page-content">
         <h1>Subtraction</h1>
 
         <p>
@@ -69,12 +69,12 @@ function Subtraction({ children, ...other }) {
           <a href="https://en.wikipedia.org/wiki/Subtraction">Source</a>
         </p>
 
-        <img src="./images/subtraction.png" class="pageImage" />
+        <img src="./images/subtraction.png" className="pageImage" />
 
         <h2>Practice</h2>
         <MathPractice operation="sub" />
       </div>
-      <div class="footer">
+      <div className="footer">
         <p>
           <a href="https://github.com/SuperDyl/math-website">GitHub</a> | Design
           by the Fabulous Ryan Harper and his sidekick Dylan Jones
