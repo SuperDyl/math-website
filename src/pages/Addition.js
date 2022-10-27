@@ -31,8 +31,11 @@ function Addition({ children, ...other }) {
 
         <img src={require("../images/addition.jpg")} className="pageImage" />
 
+        {/*
         <h2>Practice</h2>
         <MathPractice operation="add" />
+        */}
+        
       </div>
       <div className="footer">
         <p>

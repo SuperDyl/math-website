@@ -43,8 +43,10 @@ function HomePage({ children, ...other }) {
         </ul>
         <hr />
 
+        {/*
         <h2>Practice</h2>
         <MathPractice operation="random" />
+        */}
 
         <hr />
         <p>

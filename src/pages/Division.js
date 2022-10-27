@@ -42,8 +42,10 @@ function Division({ children, ...other }) {
 
         <img src={require("../images/division.png")} className="pageImage" />
 
+        {/*
         <h2>Practice</h2>
         <MathPractice operation="div" />
+        */}
       </div>
       <div className="footer">
         <p>
