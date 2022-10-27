@@ -1,12 +1,54 @@
 import React from "react";
 import Navbar from "../components/Navbar";
 import "./styles.css";
+import { Link } from "react-router-dom";
 import MathPractice from "../components/MathPractice";
 
 function HomePage({ children, ...other }) {
   return (
     <div className="reading-pane">
       <Navbar />
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a className="navbar-brand active" href="#">
+          <img src={require("../images/a-cute-angle.jpg")} />
+        </a>
+        <button
+          className="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span className="navbar-toggler-icon" />
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <Link class="nav-link" to="/Addition">
+                Addition
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/Subtraction">
+                Subtraction
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/Multiplication">
+                Multiplication
+              </Link>
+            </li>
+            <li class="nav-item">
+              <Link class="nav-link" to="/Division">
+                Division
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
       <div className="page-content">
         <h1>The Website of Mathematics</h1>
 
@@ -22,9 +64,8 @@ function HomePage({ children, ...other }) {
         <h2>Topics</h2>
         <ul>
           <li>
-            <a href="./addition/index.html">Addition</a>: The addition of two
-            whole numbers results in the total amount or sum of those values
-            combined.
+            <Link to="/Addition">Addition</Link>: The addition of two whole
+            numbers results in the total amount or sum of those values combined.
           </li>
           <li>
             <a href="./subtraction/index.html">Subtraction</a>: an arithmetic
