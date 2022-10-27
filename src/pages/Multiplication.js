@@ -7,7 +7,7 @@ function Multiplication({ children, ...other }) {
     <div className="reading-pane">
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <a className="navbar-brand" href="../">
-          <img src="../images/a-cute-angle.jpg" />
+          <img src={require("../images/a-cute-angle.jpg")} />
         </a>
         <button
           className="navbar-toggler"
@@ -60,7 +60,10 @@ function Multiplication({ children, ...other }) {
           referred to as factors.
           <a href="https://en.wikipedia.org/wiki/Multiplication">Source</a>
         </p>
-        <img src="./images/multiplication.png" className="pageImage" />
+        <img
+          src={require("../images/multiplication.png")}
+          className="pageImage"
+        />
         `<h2>Practice</h2>
         <MathPractice operation="mul" />
       </div>

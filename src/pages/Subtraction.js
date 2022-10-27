@@ -7,7 +7,7 @@ function Subtraction({ children, ...other }) {
     <div className="reading-pane">
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <a className="navbar-brand" href="../">
-          <img src="../images/a-cute-angle.jpg" />
+          <img src={require("../images/a-cute-angle.jpg")} />
         </a>
         <button
           className="navbar-toggler"
@@ -69,7 +69,7 @@ function Subtraction({ children, ...other }) {
           <a href="https://en.wikipedia.org/wiki/Subtraction">Source</a>
         </p>
 
-        <img src="./images/subtraction.png" className="pageImage" />
+        <img src={require("../images/subtraction.png")} className="pageImage" />
 
         <h2>Practice</h2>
         <MathPractice operation="sub" />

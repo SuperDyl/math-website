@@ -2,12 +2,12 @@ import React from "react";
 import MathPractice from "../components/MathPractice.js";
 import "./styles.css";
 
-function Multiplication({ children, ...other }) {
+function Division({ children, ...other }) {
   return (
     <div className="reading-pane">
       <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
         <a className="navbar-brand" href="../">
-          <img src="../images/a-cute-angle.jpg" />
+          <img src={require("../images/a-cute-angle.jpg")} />
         </a>
         <button
           className="navbar-toggler"
@@ -77,7 +77,7 @@ function Multiplication({ children, ...other }) {
           </a>
         </p>
 
-        <img src="./images/division.png" className="pageImage" />
+        <img src={require("../images/division.png")} className="pageImage" />
 
         <h2>Practice</h2>
         <MathPractice operation="div" />
@@ -92,4 +92,4 @@ function Multiplication({ children, ...other }) {
   );
 }
 
-export default Multiplication;
+export default Division;
