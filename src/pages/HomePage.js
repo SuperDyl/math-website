@@ -1,50 +1,12 @@
 import React from "react";
+import Navbar from "../components/Navbar";
 import "./styles.css";
 import MathPractice from "../components/MathPractice";
 
 function HomePage({ children, ...other }) {
   return (
     <div className="reading-pane">
-      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a className="navbar-brand active" href="#">
-          <img src={require("../images/a-cute-angle.jpg")} />
-        </a>
-        <button
-          className="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span className="navbar-toggler-icon" />
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <a className="nav-link" href="./addition/">
-                Addition
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="./subtraction/">
-                Subtraction
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="./multiplication/">
-                Multiplication
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link" href="./division/">
-                Division
-              </a>
-            </li>
-          </ul>
-        </div>
-      </nav>
+      <Navbar />
       <div className="page-content">
         <h1>The Website of Mathematics</h1>
 
