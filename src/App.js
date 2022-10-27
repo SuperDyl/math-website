@@ -4,7 +4,7 @@ import Addition from "./pages/Addition";
 import Division from "./pages/Division";
 import Subtraction from "./pages/Subtraction";
 import Multiplication from "./pages/Multiplication";
-import NoPage from "./pages/NoPage"
+import NoPage from "./pages/NoPage";
 import HomePage from "./pages/HomePage.js";
 
 export default function App() {
