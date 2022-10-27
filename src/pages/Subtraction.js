@@ -71,8 +71,10 @@ function Subtraction({ children, ...other }) {
 
         <img src={require("../images/subtraction.png")} className="pageImage" />
 
+        {/*
         <h2>Practice</h2>
         <MathPractice operation="sub" />
+        */}
       </div>
       <div className="footer">
         <p>

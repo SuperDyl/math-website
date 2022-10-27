@@ -64,8 +64,10 @@ function Multiplication({ children, ...other }) {
           src={require("../images/multiplication.png")}
           className="pageImage"
         />
+        {/*
         `<h2>Practice</h2>
         <MathPractice operation="mul" />
+        */}
       </div>
       <div className="footer">
         <p>
