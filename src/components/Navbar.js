@@ -1,39 +1,53 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-function NavItem({ link, text }) {
+function NavItem({ link, text, active = false }) {
+  const linkClass = "nav-link" + (active ? " active" : "");
   return (
     <li className="nav-item">
-      <a className="nav-link" href={link}>
+      <Link className={linkClass} to={link}>
         {text}
-      </a>
+      </Link>
     </li>
   );
 }
 
-function Navbar(props) {
+function Navbar({ active = null }) {
   const headerItems = [
     {
-      link: "./addition",
+      link: "/Addition",
       text: "Addition"
     },
     {
-      link: "./subtraction",
+      link: "/Subtraction",
       text: "Subtraction"
     },
     {
-      link: "./multiplication",
+      link: "/Multiplication",
       text: "Multiplication"
     },
     {
-      link: "./division",
+      link: "/Division",
       text: "Division"
     }
   ];
+
+  let logoActive = true;
+
+  headerItems.forEach(item => {
+    if (active !== null && active !== undefined && active === item.text) {
+      item.active = true;
+      logoActive = false;
+    }
+  });
+
+  const logoClass = "navbar-brand" + (logoActive ? " active" : "");
+
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
-      <a className="navbar-brand active" href="#">
+      <Link className={logoClass} to="/">
         <img src={require("../images/a-cute-angle.jpg")} />
-      </a>
+      </Link>
       <button
         className="navbar-toggler"
         type="button"
@@ -47,8 +61,8 @@ function Navbar(props) {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
-          {headerItems.map(({ link, text }) =>
-            <NavItem link={link} text={text} />
+          {headerItems.map(({ link, text, active = false }) =>
+            <NavItem link={link} text={text} active={active} />
           )}
         </ul>
       </div>
