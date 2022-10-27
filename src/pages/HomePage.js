@@ -1,51 +1,16 @@
 import React from "react";
 import "./styles.css";
-
-// let answer = 0;
-
-// function mathWiz(opp) {
-//   const url = "https://x-math.herokuapp.com/api/" + opp;
-//   const item = document.getElementById("practice-expression");
-
-//   fetch(url)
-//     .then(function(r) {
-//       return r.json();
-//     })
-//     .then(function(e) {
-//       answer = e.answer;
-//       console.log(answer);
-
-//       let expression = document.createTextNode(e.expression);
-//       // item.removeChild();
-//       item.appendChild(expression);
-//     });
-// }
-
-// window.onload = function() {
-//   mathWiz("random");
-// };
-
-// document.getElementById("another").onclick = function() {
-//   document.getElementById("practice-expression").textContent = "";
-//   mathWiz("random");
-// };
-
-// document.getElementById("check-button").onclick = function() {
-//   const userResponse = document.getElementById("user-answer");
-//   const userValue = userResponse.value;
-//   userResponse.value =
-//     userValue + (userValue === answer + "" ? " Correct" : " Wrong");
-// };
+import MathPractice from "../components/MathPractice";
 
 function HomePage({ children, ...other }) {
   return (
-    <div class="reading-pane">
-      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <a class="navbar-brand active" href="#">
+    <div className="reading-pane">
+      <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a className="navbar-brand active" href="#">
           <img src={require("../images/a-cute-angle.jpg")} />
         </a>
         <button
-          class="navbar-toggler"
+          className="navbar-toggler"
           type="button"
           data-toggle="collapse"
           data-target="#navbarNav"
@@ -53,34 +18,34 @@ function HomePage({ children, ...other }) {
           aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span class="navbar-toggler-icon" />
+          <span className="navbar-toggler-icon" />
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="./addition/">
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav">
+            <li className="nav-item">
+              <a className="nav-link" href="./addition/">
                 Addition
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./subtraction/">
+            <li className="nav-item">
+              <a className="nav-link" href="./subtraction/">
                 Subtraction
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./multiplication/">
+            <li className="nav-item">
+              <a className="nav-link" href="./multiplication/">
                 Multiplication
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./division/">
+            <li className="nav-item">
+              <a className="nav-link" href="./division/">
                 Division
               </a>
             </li>
           </ul>
         </div>
       </nav>
-      <div class="page-content">
+      <div className="page-content">
         <h1>The Website of Mathematics</h1>
 
         <p>
@@ -117,18 +82,7 @@ function HomePage({ children, ...other }) {
         <hr />
 
         <h2>Practice</h2>
-        <div class="practice-box">
-          <div class="practice-box-equation">
-            <span>
-              <span id="practice-expression" /> =
-            </span>
-            <input id="user-answer" />
-          </div>
-          <div class="practice-box-buttons">
-            <button id="another">Another</button>
-            <button id="check-button">Check</button>
-          </div>
-        </div>
+        <MathPractice operation="random" />
 
         <hr />
         <p>
@@ -136,48 +90,48 @@ function HomePage({ children, ...other }) {
           back and don't ask Y.
         </p>
 
-        <div class="container">
-          <div class="row">
-            <div class="col-sm">
+        <div className="container">
+          <div className="row">
+            <div className="col-sm">
               <img
-                class="gridPic"
+                className="gridPic"
                 src={require("../images/mathMeme1.jpg")}
                 width="100%"
               />
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <img
-                class="gridPic"
+                className="gridPic"
                 src={require("../images/mathMeme2.jpg")}
                 width="100%"
               />
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <img
-                class="gridPic"
+                className="gridPic"
                 src={require("../images/mathMeme3.jpg")}
                 width="100%"
               />
             </div>
           </div>
-          <div class="row">
-            <div class="col-sm">
+          <div className="row">
+            <div className="col-sm">
               <img
-                class="gridPic"
+                className="gridPic"
                 src={require("../images/mathMeme4.jpg")}
                 width="100%"
               />
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <img
-                class="gridPic"
+                className="gridPic"
                 src={require("../images/mathMeme5.png")}
                 width="100%"
               />
             </div>
-            <div class="col-sm">
+            <div className="col-sm">
               <img
-                class="gridPic"
+                className="gridPic"
                 src={require("../images/mathMeme6.png")}
                 width="100%"
               />
@@ -185,7 +139,7 @@ function HomePage({ children, ...other }) {
           </div>
         </div>
       </div>
-      <div class="footer">
+      <div className="footer">
         <p>
           <a href="https://github.com/SuperDyl/math-website">GitHub</a> | Design
           by the Fabulous Ryan Harper and his sidekick Dylan Jones
