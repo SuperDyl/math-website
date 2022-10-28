@@ -3,7 +3,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import "./styles.css";
 import { Link } from "react-router-dom";
-import MathPractice from "../components/MathPractice";
+// import MathPractice from "../components/MathPractice";
 
 function HomePage({ children, ...other }) {
   return (

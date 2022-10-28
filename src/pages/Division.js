@@ -1,5 +1,5 @@
 import React from "react";
-import MathPractice from "../components/MathPractice.js";
+// import MathPractice from "../components/MathPractice.js";
 import Navbar from "../components/Navbar.js";
 import Footer from "../components/Footer.js";
 import "./styles.css";
