@@ -46,9 +46,9 @@ function HomePage({ children, ...other }) {
         {/*
         <h2>Practice</h2>
         <MathPractice operation="random" />
-        */}
+        
 
-        <hr />
+        <hr />*/}
         <p>
           Dear Algebra please stop asking us to find your X. She's never coming
           back and don't ask Y.
