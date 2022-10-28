@@ -32,7 +32,11 @@ function Subtraction({ children, ...other }) {
           <a href="https://en.wikipedia.org/wiki/Subtraction">Source</a>
         </p>
 
-        <img src={require("../images/subtraction.png")} className="pageImage" />
+        <img
+          src={require("../images/subtraction.png")}
+          className="pageImage"
+          alt="5 minus 2 is like taking 5 objects and counting how many are left after removing 2 of them"
+        />
 
         {/*
         <h2>Practice</h2>

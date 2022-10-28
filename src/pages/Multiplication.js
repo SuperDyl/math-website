@@ -26,6 +26,7 @@ function Multiplication({ children, ...other }) {
         <img
           src={require("../images/multiplication.png")}
           className="pageImage"
+          alt="dots arranged as 3 rows of 4 columns is 12 dots in total, just as 3 times 4 is 12"
         />
         {/*
         `<h2>Practice</h2>

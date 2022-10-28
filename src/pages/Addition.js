@@ -30,7 +30,11 @@ function Addition({ children, ...other }) {
           <a href="https://en.wikipedia.org/wiki/Addition">Source</a>
         </p>
 
-        <img src={require("../images/addition.jpg")} className="pageImage" />
+        <img
+          src={require("../images/addition.jpg")}
+          className="pageImage"
+          alt="Example '4+6=10'. 10 is the sum because it is what you get from combining 4 and 6"
+        />
 
         {/*
         <h2>Practice</h2>

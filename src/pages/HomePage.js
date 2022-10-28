@@ -61,6 +61,7 @@ function HomePage({ children, ...other }) {
                 className="gridPic"
                 src={require("../images/mathMeme1.jpg")}
                 width="100%"
+                alt="'When you get the answer right but the teacher says you didn't use the right method:' Mr. Incredible: 'Math is Math!'"
               />
             </div>
             <div className="col-sm">
@@ -68,6 +69,7 @@ function HomePage({ children, ...other }) {
                 className="gridPic"
                 src={require("../images/mathMeme2.jpg")}
                 width="100%"
+                alt="'When you realize you won't use [extremely complicated math equation] at the while shopping' Buzz Lightyear: 'Years of academy training wasted!'"
               />
             </div>
             <div className="col-sm">
@@ -75,6 +77,9 @@ function HomePage({ children, ...other }) {
                 className="gridPic"
                 src={require("../images/mathMeme3.jpg")}
                 width="100%"
+                alt={
+                  '"Parents: Two wrongs don\'t make a right. Math:" character suspisiously looks away'
+                }
               />
             </div>
           </div>
@@ -84,6 +89,7 @@ function HomePage({ children, ...other }) {
                 className="gridPic"
                 src={require("../images/mathMeme4.jpg")}
                 width="100%"
+                alt="'When you solve a maths problem 3 times and get a different answer each time' Peter Parker crying"
               />
             </div>
             <div className="col-sm">
@@ -91,6 +97,7 @@ function HomePage({ children, ...other }) {
                 className="gridPic"
                 src={require("../images/mathMeme5.png")}
                 width="100%"
+                alt="'Talking to my x': 'Hi, what's up' in a text message; 'Talking to my y': message is vertical; 'Talking to my X=Y': message is diagnal; 'Talking to my [complicated equation]': message is a 3d donut shape"
               />
             </div>
             <div className="col-sm">
@@ -98,6 +105,7 @@ function HomePage({ children, ...other }) {
                 className="gridPic"
                 src={require("../images/mathMeme6.png")}
                 width="100%"
+                alt="'What is Pi?'; Programmer: 'Math.PI', Mathematician: 'pi = 4/(1 + 1^2/3^2....), Engineer: 'Three, take it or leave it'"
               />
             </div>
           </div>

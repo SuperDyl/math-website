@@ -41,7 +41,11 @@ function Division({ children, ...other }) {
           </a>
         </p>
 
-        <img src={require("../images/division.png")} className="pageImage" />
+        <img
+          src={require("../images/division.png")}
+          className="pageImage"
+          alt="To divide 20 by 4 is like seperating the apples into 4 equal groups of 5 apples each"
+        />
 
         {/*
         <h2>Practice</h2>
