@@ -33,7 +33,7 @@ function Multiplication({ children, ...other }) {
       </div>
       <div className="footer">
         <p>
-          <a href="https://github.com/SuperDyl/math-website">GitHub</a> | Design
+          <a href="https://github.com/SuperDyl/math-website/tree/react-ify">GitHub</a> | Design
           by the Fabulous Ryan Harper and his sidekick Dylan Jones
         </p>
       </div>
