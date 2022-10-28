@@ -9,7 +9,7 @@ import HomePage from "./pages/HomePage.js";
 
 export default function App() {
   return (
-    <BrowserRouter basename="/math-website/build">
+    <BrowserRouter basename="/math-website/build/">
       <Routes>
         <Route index element={<HomePage />} />
         <Route path="/Addition" element={<Addition />} />

@@ -46,7 +46,7 @@ function Navbar({ active = null }) {
   return (
     <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
       <Link className={logoClass} to="/">
-        <img src={require("../images/a-cute-angle.jpg")} />
+        <img src={require("../images/a-cute-angle.jpg")} alt="A cute angle" />
       </Link>
       <button
         className="navbar-toggler"
