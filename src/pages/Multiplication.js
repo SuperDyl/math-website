@@ -1,6 +1,7 @@
 import React from "react";
 import MathPractice from "../components/MathPractice.js";
 import Navbar from "../components/Navbar.js";
+import Footer from "../components/Footer.js";
 import "./styles.css";
 
 function Multiplication({ children, ...other }) {
@@ -31,12 +32,7 @@ function Multiplication({ children, ...other }) {
         <MathPractice operation="mul" />
         */}
       </div>
-      <div className="footer">
-        <p>
-          <a href="https://github.com/SuperDyl/math-website/tree/react-ify">GitHub</a> | Design
-          by the Fabulous Ryan Harper and his sidekick Dylan Jones
-        </p>
-      </div>
+      <Footer />
     </div>
   );
 }

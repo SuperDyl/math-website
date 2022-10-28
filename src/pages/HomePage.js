@@ -1,5 +1,6 @@
 import React from "react";
 import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
 import "./styles.css";
 import { Link } from "react-router-dom";
 import MathPractice from "../components/MathPractice";
@@ -27,18 +28,17 @@ function HomePage({ children, ...other }) {
             numbers results in the total amount or sum of those values combined.
           </li>
           <li>
-            <Link to="/Subtraction">Subtraction</Link>: an arithmetic
-            operation that represents the operation of removing objects from a
-            collection.
+            <Link to="/Subtraction">Subtraction</Link>: an arithmetic operation
+            that represents the operation of removing objects from a collection.
           </li>
           <li>
-            <Link to="/Multiplication">Multiplication</Link>: may be
-            thought of as repeated addition.
+            <Link to="/Multiplication">Multiplication</Link>: may be thought of
+            as repeated addition.
           </li>
           <li>
-            <Link to="/Division">Division</Link>: At an elementary level
-            the division of two natural numbers is the process of calculating
-            the number of times one number is contained within another.
+            <Link to="/Division">Division</Link>: At an elementary level the
+            division of two natural numbers is the process of calculating the
+            number of times one number is contained within another.
           </li>
         </ul>
         <hr />
@@ -103,12 +103,7 @@ function HomePage({ children, ...other }) {
           </div>
         </div>
       </div>
-      <div className="footer">
-        <p>
-          <a href="https://github.com/SuperDyl/math-website/tree/react-ify">GitHub</a> | Design
-          by the Fabulous Ryan Harper and his sidekick Dylan Jones
-        </p>
-      </div>
+      <Footer />
     </div>
   );
 }
