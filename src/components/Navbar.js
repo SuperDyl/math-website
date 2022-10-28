@@ -44,7 +44,7 @@ function Navbar({ active = null }) {
   const logoClass = "navbar-brand" + (logoActive ? " active" : "");
 
   return (
-    <nav className="navbar navbar-expand-sm navbar-dark bg-dark">
+    <nav id="navbarNav" className="navbar navbar-expand-sm navbar-dark bg-dark">
       <Link className={logoClass} to="/">
         <img src={require("../images/a-cute-angle.jpg")} alt="A cute angle" />
       </Link>
@@ -62,7 +62,12 @@ function Navbar({ active = null }) {
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           {headerItems.map(({ link, text, active = false }) =>
-            <NavItem link={link} text={text} active={active} />
+            <NavItem
+              key={"navitem-" + text}
+              link={link}
+              text={text}
+              active={active}
+            />
           )}
         </ul>
       </div>

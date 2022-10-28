@@ -11,7 +11,7 @@ function MathPractice({ operation = "random" }) {
     () => {
       // const url = "https://x-math.herokuapp.com/api/" + operation;
       // fetch(url).then(r => r.json()).then(e => {
-      //   answer = e.answer;
+      //   setAnswer(e.answer);
       //   console.log(answer);
       //   let expression = document.createTextNode(e.expression);
       //   practiceExpRef.current.appendChild(expression);
@@ -20,21 +20,27 @@ function MathPractice({ operation = "random" }) {
     [operation]
   );
 
-  const getAnother = useCallback(() => {
-    practiceExpRef.current.textContent = "";
-    userAnswerRef.current.value = "";
-    mathWiz();
-  }, []);
+  const getAnother = useCallback(
+    () => {
+      practiceExpRef.current.textContent = "";
+      userAnswerRef.current.value = "";
+      mathWiz();
+    },
+    [mathWiz]
+  );
 
-  const checkAnswer = useCallback(() => {
+  const checkAnswer = () => {
     const userValue = userAnswerRef.current.value;
     userAnswerRef.current.value +=
       userValue === answer + "" ? " Correct" : " Wrong";
-  }, []);
+  };
 
-  useLayoutEffect(() => {
-    mathWiz("random");
-  }, []);
+  useLayoutEffect(
+    () => {
+      mathWiz("random");
+    },
+    [mathWiz]
+  );
 
   return (
     <div className="practice-box">
