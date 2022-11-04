@@ -37,9 +37,9 @@ function MathPractice({ operation = "random" }) {
 
   useLayoutEffect(
     () => {
-      mathWiz("random");
+      mathWiz(operation);
     },
-    [mathWiz]
+    [mathWiz, operation]
   );
 
   return (
