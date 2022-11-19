@@ -49,8 +49,6 @@
   background-color: var(--dark-aqua);
 }
 
-
-
 * {
   margin: 0;
   padding: 0;
@@ -71,15 +69,6 @@ a:active {
   color: var(--near-white);
 }
 
-body {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  background-color: var(--very-dark-blue);
-  display: flex;
-  align-items: center;
-}
-
 input {
   background-color: var(--darkest-blue);
 }
@@ -91,14 +80,6 @@ button {
 
 .navbar-brand img {
   height: 3.5em;
-}
-
-.page-content {
-  flex-grow: 1;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 1em 2em;
 }
 
 .reading-pane {
@@ -168,25 +149,8 @@ button {
   text-align: center;
 }
 
-
-
-/* Phone Styles */
-@media only screen and (max-width: 400px) {
-  .reading-pane {
-    width: 100%;
-  }
-  
-}
-
 @media (max-width: 575px) {
   .navbar-collapse {
     height: 100%;
-  }
-}
-
-/* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  .reading-pane {
-    width: 100%;
   }
 }
