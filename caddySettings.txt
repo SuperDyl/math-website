@@ -1,0 +1,9 @@
+#These are the settings needed in caddy for math-website
+#change root * ... to have the correct path to the build folder
+#this can be a sub-directive
+
+handle_path /math-website/* {
+    root * /Users/.../CS260-WebDev/math-website/build
+    try_files /{path} /index.html
+    file_server
+}
